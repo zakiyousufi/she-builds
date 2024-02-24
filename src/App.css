@@ -1,3 +1,35 @@
 /* App.css */
 @import './tailwind.css';
 
+@font-face {
+  font-family: 'main';
+  src: url('./assets/fonts/main.ttf') format('truetype');
+}
+
+* {
+  scrollbar-color: #0ea5e9 #0ea4e947;
+  scrollbar-width: thin;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  font-family: 'main';
+}
+
+.welcome {
+  background: linear-gradient(180deg, #000000af 87%, #f3f4f6 98%), url(./assets/images/bg.jpg);
+  background-size: cover;
+  font-family: 'main';
+}
+
+.title {
+  font-family: 'main';
+}
+
+.popup {
+  position: fixed;
+  top: 40%;
+  left: 25%;
+}
