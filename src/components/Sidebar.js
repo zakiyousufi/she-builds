@@ -27,25 +27,25 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/program" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
-            <span className='text-left'>Programs and Activities</span>
+          <Link to="/uder-dev" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
+            <span className='text-left'>Programs and acivities</span>
             <HiOutlineChatAlt2 className="h-5 w-5" />
           </Link>
         </li>
         <li>
-          <Link to="/program" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
+          <Link to="/uder-dev" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
             <span className='text-left'>Success Stories</span>
             <HiOutlineChatAlt2 className="h-5 w-5" />
           </Link>
         </li>
         <li>
-          <Link to="/program" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
+          <Link to="/uder-dev" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
             <span className='text-left'>News</span>
             <HiOutlineChatAlt2 className="h-5 w-5" />
           </Link>
         </li>
         <li>
-          <Link to="/program" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
+          <Link to="/FAQs" className="flex flex-row text-gray-100 justify-between items-center h-12 px-4 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-20">
             <span className='text-left'>FAQs</span>
             <HiOutlineChatAlt2 className="h-5 w-5" />
           </Link>
@@ -59,9 +59,15 @@ const Sidebar = () => {
       </ul>
       <div className="flex flex-col items-center justify-center p-4">
         <div className="flex space-x-3">
-          <FaFacebook className="h-6 w-6 text-gray-100 hover:text-gray-300" />
-          <FaLinkedin className="h-6 w-6 text-gray-100 hover:text-gray-300" />
-          <FaXing className="h-6 w-6 text-gray-100 hover:text-gray-300" />
+          <a href='https://twitter.com/societyawe' target='_blank' rel="noreferrer">
+            <FaXing className="h-6 w-6 text-gray-100 hover:text-gray-300" />
+          </a>
+          <a href='https://facebook.com/profile.php?id=61555435473113' target='_blank' rel="noreferrer">
+            <FaFacebook className="h-6 w-6 text-gray-100 hover:text-gray-300" />
+          </a>
+          <a href='https://linkedin.com/in/saweofficial2024' target='_blank' rel="noreferrer">
+            <FaLinkedin className="h-6 w-6 text-gray-100 hover:text-gray-300" />
+          </a>
         </div>
       </div>
     </div>

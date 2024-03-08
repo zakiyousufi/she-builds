@@ -9,8 +9,9 @@ const TeamCard = ({ name, image, position, bio }) => {
 
   return (
     <div className="max-w-sm mx-auto rounded overflow-hidden shadow-lg mb-4 max-h-3/4">
-      <img className="w-full h-48 object-cover cursor-pointer" src={image} alt={name} onClick={openPopup} />
-
+      <div className="w-64 h-64 flex justify-center items-center">
+        <img className="object-cover h-64 cursor-pointer" src={image} alt={name} onClick={openPopup} />
+      </div>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{position}</p>
@@ -24,9 +25,13 @@ const TeamCard = ({ name, image, position, bio }) => {
                 <MdClose size={24} />
               </button>
             </div>
-            <img className="w-full h-48 object-cover mb-4" src={image} alt={name} />
-            <h2 className="text-xl font-bold mb-2">{name}</h2>
-            <h2 className="text-xl font-bold mb-2">{position}</h2>
+            <div className="flex justify-center">
+              <img className="h-48 object-cover mb-4" src={image} alt={name} />
+            </div>
+            <div className="text-center">
+              <h2 className="text-xl align-center font-bold mb-2">{name}</h2>
+              <h2 className="text-xl font-bold mb-2">{position}</h2>
+            </div>
             <p className="text-gray-700 overflow-y-auto max-h-52 scrollbar-thumb-sky-500">{bio}</p>
           </div>
         </div>

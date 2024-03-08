@@ -25,17 +25,20 @@ const Team = () => {
   }, []); 
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">Team</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className=''>
+      <h1 className="text-3xl font-bold mb-4 text-sky-500">Our Team</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
         {teamData.map(record => (
-          <TeamCard
-            key={record.id}
-            name={record.fields.name}
-            image={record.fields.image ? record.fields.image[0].url : null}
-            position={record.fields.position}
-            bio={record.fields.bio}
-          />
+          <div key={record.id} className='mx-2.5'>
+            <div className="flex flex-col h-full justify-center items-center bg-white p-4 rounded-md">
+              <TeamCard
+                name={record.fields.name}
+                image={record.fields.image ? record.fields.image[0].url : null}
+                position={record.fields.position}
+                bio={record.fields.bio}
+              />
+            </div>
+          </div>
         ))}
       </div>
     </div>

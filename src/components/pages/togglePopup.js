@@ -5,7 +5,7 @@ import { FaUserPlus, FaHandHoldingHeart, FaDonate } from "react-icons/fa";
 const TogglePopup = ({ closePopup }) => {
   return (
     <div className="popup relative p-4 w-full max-w-4xl max-h-full">
-      <div className="relative bg-white rounded-lg shadow bg-sky-500 bg-opacity-90">
+      <div className="relative bg-white rounded-lg shadow bg-sky-600 bg-opacity-75">
         <button
           type="button"
           onClick={closePopup}

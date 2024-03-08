@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import TogglePopup from './togglePopup';
-import Team from './Team';
+import RecentProjects from './RecentProjects';
 
 const Home = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -16,8 +16,8 @@ const Home = () => {
 
   return (
     <div className="font-sans ml-64 bg-gray-100">
-      <div className="welcome h-screen flex justify-center items-center flex-col text-gray-100">
-        <h1 className='title text-9xl font-sans'>SAWE</h1>
+      <div className="welcome h-screen flex justify-end items-center flex-col text-gray-100 pb-40">
+        <h1 className='title text-6xl font-sans'>SAWE</h1>
         <p>Society of Afghan Women Engineers</p>
         <button
           type="button"
@@ -27,7 +27,7 @@ const Home = () => {
           Get involved
         </button>
       </div>
-      <Team />
+      <RecentProjects />
       {isPopupOpen && <TogglePopup closePopup={closePopup} />}
     </div>
   );
