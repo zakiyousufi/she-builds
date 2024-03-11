@@ -19,7 +19,7 @@
 }
 
 .welcome {
-  background: linear-gradient(180deg, #000000af 87%, #f3f4f6 98%), url(./assets/images/bg.jpg);
+  background: linear-gradient(180deg, #000000af 87%, #000000af 98%), url(./assets/images/bg.jpg);
   background-size: cover;
   font-family: 'main';
 }
