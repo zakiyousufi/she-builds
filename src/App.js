@@ -15,7 +15,7 @@ const AlertMessage = () => {
     }
   }, []);
 
-  return null; // Return null so that this component doesn't render anything
+  return null;
 };
 
 function App() {

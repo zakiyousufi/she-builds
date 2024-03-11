@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="font-sans ml-64 bg-gray-100">
-      <div className="welcome h-screen flex justify-end items-center flex-col text-gray-100 pb-40">
+      <div className="welcome h-screen flex justify-end items-center flex-col text-gray-100 pb-20">
         <h1 className='title text-6xl font-sans'>SAWE</h1>
         <p>Society of Afghan Women Engineers</p>
         <button
